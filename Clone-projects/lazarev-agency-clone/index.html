@@ -1,15 +1,122 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lazarev-Agency</title>
-    <link rel="stylesheet" href="./css/input.css">
-  </head>
-  <body>
-    <div id="app">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/input.css">
+  <link rel="shortcut icon" href="./Assets/images/fav-icon.png" type="image/x-icon">
+  <!-- google-font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+    <!-- -remix-icon- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Lazarev-Agency</title>
+</head>
+
+<body class="font-poppins overflow-x-hidden">
+  <!-- main-container -->
+  <div class="container select-none ">
+    <nav class=" bg-primary-backgound z-50 fixed w-[100%] before:absolute before:contents-[''] before:-z-30  before:h-full before:w-40 hover:before:w-full before:transition-all before:duration-1000 before:ease-in-out before:top-0 before:left-0 before:border-t-4  after:absolute after:contents-[''] after:-z-30 after:w-40 hover:after:w-full after:transition-all after:duration-1000 after:ease-in-out after:h-full  after:top-0 after:right-0 after:border-b-4  before:border-button-background after:border-button-background text-primery-text py-6  px-[5%] md:px-[10%] flex justify-between items-center">
+   
+      <!-- --logo-- -->
+      <div class=" text-4xl font-extrabold uppercase animate-pulse ">
+       <a href="/"> <h2>lazarev.</h2></a>
+      </div>
+      <!-- nav-links -->
+      <div class="uppercase  font-semibold text-xl">
+        <ul class="flex  justify-around items-center  gap-10">
+          <li id="dropdown" class="group   rounded-t-lg px-2 py-1 relative hover:text-accent-background hover:bg-secondary-background hover:scale-95 rotate-3 hover:rotate-0  transition-all duration-300 ease-linear ">what we do <span ><i class="ri-arrow-down-s-line text-2xl arrow" id="arrow-sign"></i></span>
+            <ul id="dropdown-links" class="absolute hidden group-hover:block bg-white text-black py-2  rounded-b-lg shadow-xl space-y-2 w-full left-0  ">
+              <li><a href="#" class="ai_ml cursor-pointer block px-4 py-2 hover:text-button-background transition-all duration-200 ease-linear">🔥AI & ML</a></li>
+              <li><a href="#" class=" fintech cursor-pointer block px-4 py-2 hover:text-button-background transition-all duration-200 ease-linear">FinTech</a></li>
+              <li><a href="#" class="real-est cursor-pointer block px-4 py-2 hover:text-button-background transition-all duration-200 ease-linear">Real Estate</a></li>
+              <li><a href="#" class="e-commerce cursor-pointer block px-4 py-2 hover:text-button-background transition-all duration-200 ease-linear">E-commerce</a></li>
+              <li><a href="#" class="Web3 cursor-pointer block px-4 py-2 hover:text-button-background transition-all duration-200 ease-linear">Web3</a></li>
+              <li><a href="#" class=" MVP cursor-pointer block px-4 py-2 hover:text-button-background transition-all duration-200 ease-linear">MVP</a></li>
+              <li><a href="#" class="Relaunch cursor-pointer block px-4 py-2 hover:text-button-background transition-all duration-200 ease-linear">Relaunch</a></li>
+            </ul>
+          </li>
+
+          
+          <li class="cursor-pointer hover:text-button-background hover:scale-95 rotate-3 hover:rotate-0 transition-all duration-300 ease-linear"> cases</li>
+          <li class="cursor-pointer hover:text-button-background hover:scale-95 rotate-3 hover:rotate-0 transition-all duration-300 ease-linear">outcome</li>
+          <li class="cursor-pointer hover:text-button-background hover:scale-95 rotate-3 hover:rotate-0 transition-all duration-300 ease-linear">news</li>
+          <li class="cursor-pointer px-5 py-2  rounded-3xl   hover:scale-95 rotate-3 hover:rotate-0 transition-all duration-300 ease-linear z-10  relative before:absolute before:contents-['']  before:top-0  before:w-full before:h-full before:-z-10 before:bg-button-background  before:rounded-3xl  before:left-28 group overflow-hidden hover:before:left-0 before:transition-all before:duration-300 before:ease-linear">let's talk <span class="ml-4  ">
+            <i class="text-2xl ri-pencil-fill group-hover:hidden  "></i>
+            <i class=" text-2xl ri-arrow-right-up-line hidden group-hover:inline-block"></i>
+          </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- home-page -->
+    <section
+      class="w-[100vw] h-[100vh] pt-5  bg-primary-backgound text-primery-text flex flex-col justify-center items-center  ">
+      <div class="py-8  px-10 capitalize font-sans  flex justify-center items-center flex-col">
+
+        <h1 class=" uppercase font-extrabold text-[8vw] flex justify-center items-center ">AI & ML PR<span class="">
+            <svg
+              class=" shadow-[0px_0px_10px_#0DA34E] w-[7vw] rounded-full bg-button-background hover:scale-90 transition-all duration-300 ease-linear"
+              fill="none" viewBox="0 0 131 136">
+              <path class="g-path" data-morph="end" fill="#fff"
+                d="M48 77.457v7.224h7.224l21.307-21.306-7.224-7.225L48 77.457Zm34.118-19.67a1.919 1.919 0 0 0 0-2.716l-4.508-4.508a1.919 1.919 0 0 0-2.716 0l-3.526 3.526 7.224 7.224 3.526-3.525Z">
+              </path>
+            </svg>
+          </span>duct</h1>
+        <h1 class="uppercase font-extrabold text-[8vw] flex justify-center items-center">DESIGN Agency</h1>
+
+        <p class="text-2xl text-center">We partner with AI &amp; ML&nbsp;businesses, guiding them from series A <br>to
+          series D and beyond with
+          our expertise in </p>
+
+        <p class="text-lg font-semibold text-center mt-10">we launch <span
+            class="bg-button-background bg-opacity-20 text-button-background border-dotted border-2 border-button-background px-3 py-1.5 shadow-button-background  shadow-[0px_0px_10px] rounded-full animate-pulse">mvps</span>
+          redefine <span
+            class="bg-button-background bg-opacity-20 text-button-background border-dotted border-2 border-button-background px-3 py-1.5 shadow-button-background  shadow-[0px_0px_10px] rounded-full animate-pulse">exiting
+            products</span> & continuously dive into <span
+            class="bg-button-background bg-opacity-20 text-button-background border-dotted border-2 border-button-background px-3 py-1.5 shadow-button-background  shadow-[0px_0px_10px] rounded-full animate-pulse">customer
+            development</span></p>
+      </div>
       
+      <div id="moving-div" class=" w-[70%] border mt-10 flex py-8  overflow-hidden  relative  before:absolute before:top-0 before:left-0 before:w-24 before:h-full before:z-10 before:bg-primary-backgound  before:shadow-[25px_0px_20px_#111111] after:absolute after:top-0 after:right-0 after:w-24 after:h-full after:z-10 after:bg-primary-backgound after:shadow-[0px_0px_25px_20px_#111111] group">
+        
+        <div class="move flex  gap-10 mr-56 animate-infinite-scroll group-hover:pause">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/forbes.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/adweek.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/pmi.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/wf.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/adweek.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/rd.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/pmi.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/webby.svg" alt="">
+        </div>
+        <div class="move flex gap-10 ml-56 animate-infinite-scroll group-hover:pause" >
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/forbes.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/adweek.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/pmi.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/wf.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/adweek.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/rd.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/pmi.svg" alt="">
+            <img class="w-32" src="https://lazarev.kiev.ua/la24/webby.svg" alt="">
+        </div>
+     
+
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    </section>
+
+      
+  </div>
+  <!-- ----gsap-cdn----- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
