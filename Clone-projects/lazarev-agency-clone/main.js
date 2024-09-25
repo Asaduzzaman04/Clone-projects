@@ -29,3 +29,18 @@ const dropIcon = () => {
     })
 }
 dropIcon()
+
+// -----second-section-----
+const intosec = document.getElementById("intro-vedio")
+const vedioCursor = document.getElementsByClassName("vedio-cursor")
+intosec.addEventListener("mousemove", (e) => {
+ gsap.to(".vedio-cursor", {
+    x:e.clientX - vedioCursor.offsetWidth / 2,
+    y: e.offsetY - vedioCursor.offsetHeight / 2,
+    ease: "power3.out",
+    duration : 0.2,
+    scale:2
+ })
+ 
+
+})
